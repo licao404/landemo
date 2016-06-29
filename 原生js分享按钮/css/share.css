@@ -1,0 +1,76 @@
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+    body{
+      font-family: "微软雅黑";
+      font-size: 14px;
+      height: 5000px;
+    }
+    #dialog-share{
+      display: inline-block;
+      width: 60px;
+      background-color: #eee;
+      position: fixed;
+      top: 100px;
+      left: -60px;
+      cursor: pointer;      
+    }
+    #dialog-share .item{
+      width: 100%;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      color: #eee;
+      background-color: #eee;
+      float: left;
+      transition: 0.2s;
+    }
+    #dialog-share .item .icon{
+      font-size: 24px;
+     }
+    #dialog-share .item:hover{
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.35);
+      width: 70px;
+    }
+    #dialog-share .zhihu{
+      background-color: #0F88EB;
+    }
+    #dialog-share .konjian{
+      background-color: #FFCE00; 
+    }
+    #dialog-share .weibo{
+      background-color: #E6162D;
+    }
+    #dialog-share .weixin{
+      background-color: #38C738;
+    }
+    #dialog-share:hover>#share-tag{
+      opacity: 0.6;
+    }
+    #dialog-share #share-tag{
+      width: 25px;
+      height: 50px;
+      line-height: 22px;
+      text-align: center;
+      background-color: #333;
+      position: absolute;
+      right: -25px;
+      top: 50px;
+      color: #eee;
+      box-shadow: 1px 3px 3px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+    #dialog-share #share-tag .icon{
+      font-size: 12px;
+    }
+    .c3{
+      width: 5px;
+      height: 100%;
+      background-color: red;
+      position: absolute;
+      right: -5px;
+    }
