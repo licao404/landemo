@@ -1,0 +1,445 @@
+body,div,ul,li,a,h3,h4,p,span{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+li{
+    list-style: none;
+}
+.clearfix:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.resume .intro{
+    text-align: center;
+    width: 1260px;
+    margin: 0 auto;
+}
+.resume .intro h3{
+    margin: 50px 0 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.resume .intro p{
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.resume .intro:after{
+    content:'';
+    display: block;
+    height:0;
+    width: 80%;
+    margin: 0  auto 20px;
+    border-radius: 2px;
+    border-bottom: 3px solid rgba(44,44,44,0.8);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.resume .control-area{
+    text-align: center;
+    padding: 10px;
+}
+.control-area .control-list{
+    width: 1260px;
+    text-align: center;
+    margin: 0 auto;
+}
+.control-area .control-list .active{
+    background-color: rgba(98,203,146,0.9);
+    transition: 0.3s;
+}
+.control-area .control-list li{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: rgba(64,49,131,0.9);
+    transition: 0.3s;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+.control-area .control-list li:hover{
+    background-color:rgba(98,203,146,1);
+}
+.resume .demo-area{
+    width: 1260px;
+    margin: 20px auto;
+}
+.carousel-demo .wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+.carousel-demo .wrap .img-ct {
+    position: absolute;
+}
+.carousel-demo .wrap .img-ct li{
+    float: left;
+}
+.carousel-demo .wrap .img-ct img{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.carousel-demo .wrap .arrow{
+    position: absolute;
+    top:50%;
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.carousel-demo .wrap .pre {
+    left: 2%;
+}
+.carousel-demo .wrap .next{
+    right: 2%;
+}
+.carousel-demo .wrap .bullet{
+    position: absolute;
+    top:90%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.carousel-demo .wrap .bullet li{
+    display: inline-block;
+    width: 30px;
+    height: 7px;
+    background-color: #666;
+    margin-left: 10px;
+    border-radius: 40px;
+}
+.carousel-demo .wrap .bullet .active{
+    background-color: #fff;
+}
+.carousel-multi-demo{
+    display: none;
+    margin: 0 auto;
+}
+.carousel-multi-demo .wrap{
+    position: relative;
+    padding: 0 10px;
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+.carousel-multi-demo .wrap .img-ct {
+    position: relative;
+}
+.carousel-multi-demo .wrap .img-ct li {
+    position: absolute;
+    display: none;
+}
+.carousel-multi-demo .wrap .img-ct li img{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.carousel-multi-demo .wrap .arrow{
+    position: absolute;
+    top:50%;
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.carousel-multi-demo .wrap .pre{
+    left: 3%;
+}
+.carousel-multi-demo .wrap .next{
+    right: 3%;
+}
+.carousel-multi-demo .wrap .bullet{
+    position: absolute;
+    top:90%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.carousel-multi-demo .wrap .bullet li{
+    display: inline-block;
+    width: 20px;
+    height: 7px;
+    background-color: #666;
+    margin-left: 10px;
+    border-radius: 40px;
+}
+.carousel-multi-demo .wrap .bullet .active{
+    background-color: #fff;
+}
+.demo-area .tab-demo{
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+.demo-area .tab-demo .tab-mod{
+    width: 734px;
+    margin: 0 auto;
+}
+.tab-mod .tab-ct .tab{
+    float: left;
+    border: 2px solid;
+    border-color:#ccc #ccc transparent #ccc;
+    border-radius: 5px;
+}
+.tab-mod .tab-ct .tab li{
+    float: left;
+    padding: 5px;
+}
+.tab-mod .tab-ct .tab a {
+    color: #000;
+}
+.tab-mod .tab-ct .tab .active{
+    background: #ccc;
+    opacity: 0.8;
+}
+.tab-mod .tab-ct .tab .active a {
+    color: #ff0000;
+}
+.tab-mod .panel-ct{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 730px;
+}
+.panel-ct .panel {
+    margin-left: 14px;
+    margin-top: 14px;
+    display: none;
+}
+.tab-mod .panel-ct .active {
+    display: block;
+}
+.tab-mod .panel-ct .prod{
+    position: relative;
+    float: left;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 14px 0 14px 14px;
+    text-align: center;
+}
+.panel-ct .prod .cover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    transition: 0.5s;
+    opacity: 0;
+}
+.panel-ct .prod .cover .btn{
+    position: absolute;
+    top: 78%;
+    left: 47%;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px 18px;
+    text-align: center;
+    color: #ff0000;
+    background: #fff;
+}
+.tab-mod .cover:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+.tab-mod .prod-ct{
+    margin-left: -20px;
+    margin-top: -20px;
+}
+.tab-mod .prod-name{
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+}
+.tab-mod .prod-price{
+    text-align: left;
+    color: #ff0000;
+}
+.water-layout{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.water-layout .waterfall-ct{
+    margin: 0 auto;
+    position: relative;
+}
+.water-layout img{
+    width: 270px;
+    height: auto;
+}
+.water-layout .add-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 0.3s;
+    opacity: 1;
+    border-radius: 5px;
+    background-color: rgba(64,49,131,0.9);
+    color: #eee;
+}
+.water-layout .add-btn:hover{
+    padding: 10px 10px;
+    background-color: rgba(236,117,121,1);
+    color: #fff;
+    transition: 0.3s;
+}
+.waterfall-ct .water-item{
+    transition: all 0.5s;
+    position:absolute;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.6);
+    margin:20px;
+}
+.water-item .item-info h3 {
+    color: #fff;
+    line-height: 30px;
+}
+.water-item .item-info h4 {
+    text-align: left;
+    text-indent:2em;
+    width: 270px;
+    word-wrap:break-word;
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.item-cover {
+    position: absolute;
+    /*!*transition: 0.8s;*!开启JS中相关代码之后,再开启这个可获得更加优秀的动画效果*/
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.item-cover:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.about{
+    width: 1260px;
+    text-align: center;
+    margin: 200px auto 50px auto;
+}
+.about >h3{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.about>p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 120px;
+    line-height: 1.75em;
+}
+.about .timeline li {
+    display: block;
+}
+.timeline .fl, .timeline .fr {
+    width: 50%;
+}
+.about .timeline img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid #eeeeee;
+}
+.about .timeline h4 {
+    margin-bottom: 10px;
+}
+.about .timeline p {
+    font-size: 14px;
+    line-height: 1.75em;
+}
+.about .timeline .fl {
+    float: left;
+    text-align: right;
+    padding-left: 50px;
+}
+.about .timeline .fl img {
+    float: right;
+    margin-right: -36px;
+    margin-left: 10px;
+}
+.about .timeline .fr {
+    float: right;
+    text-align: left;
+    padding-right: 50px;
+}
+.about .timeline .fr img {
+    float: left;
+    margin-left: -36px;
+    margin-right: 10px;
+}
+.about .timeline .border {
+    width: 5px;
+    height: 130px;
+    background-color: #eeeeee;
+    clear: both;
+    margin: 0 auto;
+}
+.about .timeline .center {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 50%;
+    border: 3px solid #eeeeee;
+    background-color: #fbd135;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.about .timeline .center p {
+    font-size: 15px;
+    text-align: center;
+}
+.triangle{
+    transition: 0.2s;
+    position: fixed;
+    border: 15px solid;
+    border-color: rgba(236,117,121,1) transparent transparent rgba(236,117,121,1);
+    width: 0;
+    height: 0;
+    top:0;
+    left: 0;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.triangle:hover{
+    transition: 0.2s;
+    border: 35px solid;
+    border-color: rgba(236,117,121,1) transparent transparent rgba(236,117,121,1);
+}
+.footer{
+    width: 1260px;
+    text-align: center;
+    margin: 20px auto;
+}
+.footer .footer-content{
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+}
+.footer-content ul li{
+    display: inline;
+    padding-left: 20px;
+}
+.footer .footer-content i:hover{
+    transition: 0.3s;
+    color: rgba(98,203,146,1);
+}

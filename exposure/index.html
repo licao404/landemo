@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="exposure.js"></script>
+		<style type="text/css">
+			body{
+				background-color: #eee;
+			}
+			.content{
+				width: 1000px;
+				height: 1000px;
+				line-height: 1000px;
+				text-align: center;
+				border-radius: 5px;
+				margin: 0 auto;
+				background-color: #12D7B5;
+				margin-bottom: 20px;
+				color: #fff;
+				font-family: Microsoft YaHei;
+			}
+			.item{
+				display: none;
+				width: 1000px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				border-radius: 5px;
+				margin: 0 auto;
+				background-color: #12D7B5;
+				margin-bottom: 20px;
+				color: #fff;
+				font-family: Microsoft YaHei;
+			}
+		</style>
+    </head>
+    <body>
+		<div class="content">Content</div>
+	    <div class="item">1</div>
+	    <div class="item">2</div>
+	    <div class="item">3</div>
+	    <div class="item">4</div>
+	    <div class="item">5</div>
+	    <div class="item">6</div>
+	    <div class="item">7</div>
+	    <div class="item">8</div>
+	    <div class="item">9</div>
+	    <div class="item">10</div>
+	    <div class="item">11</div>
+	    <div class="item">12</div>
+	    <div class="item">13</div>
+	    <div class="item">14</div>
+	    <div class="item">15</div>
+	    <div class="item">16</div>
+	    <div class="item">17</div>
+	    <div class="item">18</div>
+	    <div class="item">19</div>
+	    <div class="item">20</div>
+	    <div class="item">21</div>
+	    <div class="item">22</div>
+	    <div class="item">23</div>
+	    <div class="item">24</div>
+	    <div class="item">1</div>
+	    <div class="item">2</div>
+	    <div class="item">3</div>
+	    <div class="item">4</div>
+	    <div class="item">5</div>
+	    <div class="item">6</div>
+	    <div class="item">7</div>
+	    <div class="item">8</div>
+	    <div class="item">9</div>
+	    <div class="item">10</div>
+	    <div class="item">11</div>
+	    <div class="item">12</div>
+	    <div class="item">13</div>
+	    <div class="item">14</div>
+	    <div class="item">15</div>
+	    <div class="item">16</div>
+	    <div class="item">17</div>
+	    <div class="item">18</div>
+	    <div class="item">19</div>
+	    <div class="item">20</div>
+	    <div class="item">21</div>
+	    <div class="item">22</div>
+	    <div class="item">23</div>
+	    <div class="item">24</div>
+    <script type="text/javascript">
+    	//$target 是 jquery 对象
+// 当窗口滚动时，如果$target 出现在可见区域，执行回调函数里面的代码，且在回调函数内，$(this)代表$target
+$(".item").each(function() {
+	var _this = $(this);
+	Exposure.bind(_this, function(){
+	    // console.log(_this);    // $target
+	    _this.fadeIn(300);
+});	
+});
+
+
+// 当窗口滚动时，如果$target 出现在可见区域，执行回调函数里面的代码，且在回调函数内，$(this)代表$target。 仅执行一次回调函数，下次$target 曝光不再执行
+// Exposure.one($(".item"), function(){
+//     console.log($(this));    // $target
+// })
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "demos": [
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/FormValidation.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81.png",
+      "des_word": "第一次接触JavaScript,搭配自己所学的正则的表单验证",
+      "title_name": "表单验证"
+    },
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/Stick_Up/stickUp.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/stick.png",
+      "des_word": "学习了Clone,获取属性的Attr,以及偏移的offset,这个时候接受了JS",
+      "title_name": "导航固定"
+    }, 
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%92%AD/Carry_DOM.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/carousel.png",
+      "des_word": "和本页面上面用到的轮播不一样,这个用的搬运DOM的方式",
+      "title_name": "轮播效果"
+    },
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/%E5%85%A8%E5%B1%8F%E8%BD%AE%E6%92%AD/carouselFull.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/carouselFull.png",
+      "des_word": "一个占据第一屏的轮播,小轮播可以使用懒加载,但是全屏用了懒加载之后体验真不好",
+      "title_name": "全屏轮播"
+    },
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/%E6%9B%9D%E5%85%89%E5%8A%A0%E8%BD%BD/%E6%9B%9D%E5%85%89%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/%E6%9B%9D%E5%85%89%E5%8A%A0%E8%BD%BD%E6%9B%B4%E5%A4%9A.png",
+      "des_word": "利用滚动距离、窗口高度、偏移值、事件代理做了曝光加载更多",
+      "title_name": "曝光加载更多"
+    },
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/%E6%87%92%E5%8A%A0%E8%BD%BD/%E6%87%92%E5%8A%A0%E8%BD%BD.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/%E6%87%92%E5%8A%A0%E8%BD%BD.png",
+      "des_word": "页面图很多,但又不是每个都要展现,就结合曝光加载进行加载,用新学的时间对象对性能优化",
+      "title_name": "懒加载"
+    },
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E7%80%91%E5%B8%83%E6%B5%81/%E6%87%92%E5%8A%A0%E8%BD%BD%E3%80%81%E7%80%91%E5%B8%83%E6%B5%81%E3%80%81AJAX.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/%E7%80%91%E5%B8%83%E6%B5%81.png",
+      "des_word": "利用新浪新闻的API,但是获取数据好慢,在图片需要加载后使用瀑布流布局,正式接触JSON",
+      "title_name": "曝光加载后瀑布流"
+    },
+    {
+      "href_url": "http://3.tamamoran.applinzi.com/Dialog/dialog.html",
+      "img_url": "http://7.tamamoran.applinzi.com/img/waterFall/dialog.png",
+      "des_word": "经历面向对象编程的转变后,搭配__proto__和Prototype也有好效果",
+      "title_name": "Dialog"
+    },
+  ]
+}
