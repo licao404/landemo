@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tooltip</title>
+	<link rel="stylesheet" href="./css/example.css">
+	<link rel="stylesheet" href="./css/tooltip.css">
+</head>
+<body>
+	<div class="mytooltip" title="这是一个默认tooltip">Hover Me</div>
+	<div class="mytooltip" title="这是一个默认tooltip">Hover Me</div>
+	<div class="mytooltip-left" title="这是一个左tooltip">Hover Me</div>
+	<div class="mytooltip-bottom" title="这是一个tooltip">Hover Me</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/tooltip.js"></script>
+	<script type="text/javascript">
+		$('.mytooltip').tipso();
+		$('.mytooltip-left').tipso({position: 'left'});
+		$('.mytooltip-bottom').tipso({position: 'bottom'});
+	</script>
+</body>
+</html>

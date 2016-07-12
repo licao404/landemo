@@ -1,0 +1,36 @@
+.mytooltip{
+	width: 100px;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #eee;
+	color: #000;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.mytooltip-left{
+	width: 100px;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #eee;
+	color: #000;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.mytooltip-bottom{
+	width: 100px;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #eee;
+	color: #000;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
