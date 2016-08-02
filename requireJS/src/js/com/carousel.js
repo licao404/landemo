@@ -139,10 +139,12 @@ define(['jquery'],function($){
 
 		bindEvent: function () {
 			var _this = this;
-			_this.$pre.on('click',function () {
+			_this.$pre.on('click',function (e) {
+				 e.preventDefault();
 				 _this.playPre();
 			});
-			_this.$next.on('click',function () {
+			_this.$next.on('click',function (e) {
+				 e.preventDefault();
 				 _this.playNext();
 			});		
 			_this.$bullet.children().on('click',function () {
