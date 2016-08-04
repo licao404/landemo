@@ -1,0 +1,18 @@
+/**
+ * 
+ * @authors lanlan
+ * @date    2016-07-14 11:09:49
+ * @version $Id$
+ */
+body,p,ul,li,a{margin: 0;padding: 0;list-style: none;text-decoration: none;}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei",tahoma,arial,\5b8b\4f53,sans-serif;}
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{*zoom: 1;}
+.signup-wrapper{display: inline-block;padding: 30px;}
+.input-title{float: right;margin-right: 8px;}
+.singup-ipt{float: right;width: 250px;height: 30px;border: 1px solid #D8D7D7;border-radius: 4px;padding: 0 10px;}
+.item-input{height: 32px;line-height: 32px;}
+.ipt-tip{float: right;}
+.signup-item{margin-bottom: 20px;}
+.btn-sub{float: right;display: block;margin-top: 20px;width:80px;height: 30px;border-radius: 3px;background-color: #4896DA;text-align: center;line-height: 30px;color: #fff;transition: .3s;}
+.btn-sub:hover{background-color: #337AB8;}
