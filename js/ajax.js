@@ -3,7 +3,8 @@ var xmlhttp = false;
 function ajax(opts) {
     //跨浏览器创建xhr对象
     xmlhttp = false;
-    if (window.XMLHttpRequest) { //现代浏览器
+    if (window.XMLHttpRequest) {
+        //现代浏览器
         xmlhttp = new XMLHttpRequest();
         if (xmlhttp.overrideMimeType) { //设置MIME类别，针对某些特定版本的mozillar浏览器的BUG进行修正
             xmlhttp.overrideMimeType('text/xml');
@@ -14,7 +15,7 @@ function ajax(opts) {
         } catch (e) {
             try {
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch (e) {}
+            } catch (e) { }
         }
     }
 
@@ -24,7 +25,7 @@ function ajax(opts) {
     }
 
 
-    xmlhttp.onreadystatechange = function() {
+    xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             var json = JSON.parse(xmlhttp.responseText);
             opts.success(json);
