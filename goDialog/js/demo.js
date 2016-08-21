@@ -12,8 +12,8 @@ $('.btn2').on('click',function () {
 
 $('.btn3').on('click',function(){
   $(this).goDialog({
-    title: 'Message',
-    message: '确认删除么',
+    title: '删除',
+    message: '确定将该效果图从模型库中移除？',
     isShowCloseBtn: true,
     isShowConfirmBtn: true,
     onConfirm: function(){
