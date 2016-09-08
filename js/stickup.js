@@ -33,7 +33,8 @@
 		}
 
 		function setFixed () {
-			 $cur.attr('fixed',true)//绑定自定义属性作为标识位
+			 $cur.attr('fixed',true)
+			 //绑定自定义属性作为标识位
 			 .css({
 			 	position: 'fixed',
 			 	top: 0,
