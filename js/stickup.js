@@ -1,5 +1,4 @@
 //为jQuery对象扩展一个stickup插件
-
 (function ($) {
 	$.fn.stickup = function (handler) {
 		 var $cur = this,
@@ -11,7 +10,7 @@
 
 		//克隆一个并让他隐藏
 		var $clone = $cur.clone()//链式写法
-					.css('opacity',0)//保证看到的只有一个
+					.css('opacity',0)
 					.insertBefore($cur)
 					.hide();
 
