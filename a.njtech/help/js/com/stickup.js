@@ -11,7 +11,6 @@ define(['jquery'],function($){
 
         },
         computeVal: function(){
-            var _this = this;
             this.offsetTop = this.$node.offset().top;
             this.offsetLeft = this.$node.offset().left;
         },
