@@ -16,10 +16,10 @@
 // </script>
 
 // 默认是在上方显示，如需更改位置
-// 	$('.work-warn').tipso({
-// 		position: 'bottom'
-// 	});
-	
+//  $('.work-warn').tipso({
+//      position: 'bottom'
+//  });
+
 ! function(a, b, c, d) {
     function e(b, c) {
         this.element = a(b), this.settings = a.extend({}, j, c), this._defaults = j, this._name = i, this._title = this.element.attr("title"), this.mode = "hide", this.init()
