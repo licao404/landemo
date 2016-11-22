@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
+    	<div id="app-1">
+    		<ul>
+    			<todo-item v-for="todo in todos" v-bind:todo="todo"></todo-item>
+    			<button v-on:click="removeItem">Delete</button>
+    		</ul>
+    	</div>
+    	<script src="../lib/vue.js"></script>
+    	<script>
+
+    		Vue.component('todo-item',{
+    			props: ['todo'],
+    			template: '<li>{{ todo.text }}</li>'
+    		})
+
+    		var app1 = new Vue({
+    			el: '#app-1',
+    			data: {
+    				todos: [
+    					{ text: 'Learan ES2015' },
+    					{ text: 'Learn Vue' },
+    					{ text: 'Build something awesome' }
+    				]
+    			},
+    			methods: {
+    				removeItem: function () {
+    					this.todos.text = this.todos.text.split('').reverse().join('')
+    				}
+    			}
+    		})
+
+    	</script>
+    </body>
+</html>
