@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    </head>
+    <body>
+		<!-- <ul id="example-2">
+		  <li v-for="(item, index) of items">
+		    {{ parentMessage }} - {{ index }} - {{ item.message }}
+		  </li>
+		</ul> -->
+		<!-- <ul id="example-2">
+		  <template v-for="item in items">
+		    <li>{{ item.message }}</li>
+		    <li class="divider">1</li>
+		  </template>
+		</ul> -->
+<!-- 		<ul id="repeat-object" class="demo">
+		  <li v-for="value in object">
+		    {{ value }}
+		  </li>
+		</ul> -->
+
+		<!-- <div id="repeat-object" v-for="(value, key) in object">
+		  {{ key }} : {{ value }}
+		</div>		 -->
+
+		<!-- <li v-for="n in evenNumbers">{{ n }}</li> -->
+		
+		<!-- <div id="example-1">
+		  <button v-on:click="greet">增加 1</button>
+		  <p>这个按钮被点击了 {{ counter }} 次。</p>
+		</div> -->
+<!-- 		<div class="example-1">
+			<input v-model="message" placeholder="edit me">
+			<p>Message is: {{ message }}</p>
+
+			<span>Multiline message is:</span>
+			<p style="white-space: pre">{{ message02 }}</p>
+			<br>
+			<textarea v-model="message02" placeholder="add multiple lines"></textarea>
+
+			<input type="checkbox" id="checkbox" v-model="checked">
+			<label for="checkbox">{{ checked }}</label>
+		</div> -->
+
+		<div id="example-2">
+		  <simple-counter></simple-counter>
+		  <simple-counter></simple-counter>
+		  <simple-counter></simple-counter>
+		</div>
+    <script src="./vue.js"></script>
+    <script>
+		const sa = { counter: 0 }
+
+		Vue.component('simple-counter', {
+		  template: '<button v-on:click="counter += 1" type="button" class="btn btn-default">{{ counter }}</button>',
+		  data: () => sa //({ counter: 0 })
+		})
+		new Vue({
+		  el: '#example-2'
+		})
+		// var example2 = new Vue({
+		//   el: '#example-2',
+		//   data: {
+		//     parentMessage: 'Parent',
+		//     items: [
+		//       { message: 'Foo' },
+		//       { message: 'Bar' }
+		//     ]
+		//   }
+		// })
+		// new Vue({
+		//   el: '#repeat-object',
+		//   data: {
+		//     object: {
+		//       FirstName: 'John',
+		//       LastName: 'Doe',
+		//       Age: 30
+		//     }
+		//   }
+		// })
+		// 
+		// new Vue({
+		// 	data: {
+		// 	  numbers: [ 1, 2, 3, 4, 5 ]
+		// 	},
+		// 	computed: {
+		// 	  evenNumbers: function () {
+		// 	    return this.numbers.filter(function (number) {
+		// 	      return number % 2 === 0
+		// 	    })
+		// 	  }
+		// 	}			
+		// })
+		// var example1 = new Vue({
+		//   el: '.example-1',
+		//   data: {
+		//     message: '',
+		//     message02: ''
+		//   },
+		//   methods: {
+		// 	  greet: function (e) {
+		// 	  	this.counter ++
+		// 	  	console.log(e.target.tagName);
+		// 	  }
+		//   }
+		// })
+    </script>
+    </body>
+</html>

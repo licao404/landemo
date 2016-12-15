@@ -7,8 +7,8 @@
     <body>
     	<div id="app-1">
     		<ul>
-    			<todo-item v-for="todo in todos" v-bind:todo="todo"></todo-item>
-    			<button v-on:click="removeItem">Delete</button>
+    			<todo-item v-for="item in todos" v-bind:todo="item"></todo-item>
+    			
     		</ul>
     	</div>
     	<script src="../lib/vue.js"></script>
